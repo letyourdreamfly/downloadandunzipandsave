@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='utf-8'?>
+<plugin id="org.apache.fyldemo" version="1.0.0" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
+<name>downloadandunzipandsave</name>
+<js-module name="downloadandunzipandsave" src="www/downloadandunzipandsave.js">
+<clobbers target="downloadandunzipandsave" />
+</js-module>
+<platform name="android">
+<config-file parent="/*" target="res/xml/config.xml">
+<feature name="downloadandunzipandsave">
+<param name="android-package" value="org.apache.fyldemo.downloadandunzipandsave" />
+</feature>
+</config-file>
+<config-file parent="/*" target="AndroidManifest.xml">
+</config-file>
+<source-file src="src/android/downloadandunzipandsave.java" target-dir="src/org/apache/fyldemo/downloadandunzipandsave" />
+</platform>
+</plugin>
